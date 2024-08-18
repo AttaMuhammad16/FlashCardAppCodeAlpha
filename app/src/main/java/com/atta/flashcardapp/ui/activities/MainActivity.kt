@@ -102,14 +102,13 @@ class MainActivity : ComponentActivity() {
 
     @Composable
     fun AddFlashCardScreen(viewModel: FlashCardViewModel,onQuizScreen:()->Unit) {
+
         var question by remember { mutableStateOf("") }
         var answer by remember { mutableStateOf("") }
         val questionFocusRequester = remember { FocusRequester() }
 
         val scope = rememberCoroutineScope()
         val modifier = Modifier.fillMaxWidth().padding(top = 5.dp, start = 15.dp, end = 15.dp)
-
-
 
         val textFiledBorderColor=OutlinedTextFieldDefaults.colors(
             cursorColor = Color.Black,
@@ -172,9 +171,9 @@ class MainActivity : ComponentActivity() {
                         .fillMaxWidth()
                         .align(Alignment.CenterHorizontally)
                         .padding(start = 20.dp, end = 20.dp),
-                colors = ButtonDefaults.buttonColors(containerColor = Color.Green)
+                colors = ButtonDefaults.buttonColors(containerColor = Color.Green.copy(alpha = .5f))
             ) {
-                Text("ShowQuiz Screen", color = Color.White)
+                Text("ShowQuiz Screen", color =Color.Black)
             }
 
             Spacer(modifier = Modifier.padding(5.dp))
