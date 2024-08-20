@@ -66,6 +66,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+
         window.statusBarColor = ContextCompat.getColor(this@MainActivity, R.color.dark_blue)
         setContent {
             FlashCardAppTheme {

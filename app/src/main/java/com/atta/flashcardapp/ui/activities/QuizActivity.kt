@@ -44,12 +44,13 @@ import androidx.core.content.ContextCompat
 import androidx.lifecycle.lifecycleScope
 import com.atta.flashcardapp.R
 import com.atta.flashcardapp.models.FlashCardEntity
-import com.atta.flashcardapp.ui.activities.ui.theme.FlashCardAppTheme
 import com.atta.flashcardapp.ui.components.MyTopAppBar
+import com.atta.flashcardapp.ui.theme.FlashCardAppTheme
 import com.atta.flashcardapp.ui.viewmodels.FlashCardViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 import javax.inject.Inject
+
 
 
 @AndroidEntryPoint
